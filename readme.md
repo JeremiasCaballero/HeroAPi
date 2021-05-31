@@ -13,7 +13,7 @@ HeroApi is a web service made in Java (Spring boot) with connection to data base
 
 ## [Documentation]
 
-You can look at the Api's documentation in localhost: 8080/swagger-ui/
+You can look at the Api's documentation in localhost:8080/swagger-ui/
 
 
 
