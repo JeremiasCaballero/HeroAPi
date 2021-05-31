@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotEmpty;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +25,7 @@ public class Personaje {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String image;
+	@NotEmpty(message="name is mandatory")
 	private String name;
 	private int age;
 	private String history;

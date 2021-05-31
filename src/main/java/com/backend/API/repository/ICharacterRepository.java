@@ -17,5 +17,11 @@ public interface ICharacterRepository extends JpaRepository<Personaje, Long>{
 	 */
 	@Query("SELECT NEW com.backend.API.entity.CustomCharacter(c.name, c.image) FROM Personaje c")
 	public List<CustomCharacter> getAll();
+
+     
+	public void deleteById(long id);
 	
+	
+	
+	public Personaje findById(long id);
 }
