@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.backend.API.entity.Serie;
 
 @Repository
-public interface IserieRepository extends JpaRepository<Serie, Long>{
+public interface ISerieRepository extends JpaRepository<Serie, Long>{
 	
 	public Serie findById(long id);
 	
